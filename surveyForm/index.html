@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Football Training Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main>
+            <header id="top-header">
+                <h1 id="title">Football Training Survey Form</h1>
+                <p id="description">Please fill this form to help us determine the best way to serve you </p>
+            </header>
+            <form id="survey-form">
+                <div>
+                    <label for="name" id="name-label" class="demographics">Name</label>
+                    <input type="text" id="name" name="name" class="form-entry" placeholder="Enter your name" required><br>
+                </div>
+                <div>
+                    <label for="email" id="email-label" class="demographics">Email</label>
+                    <input type="email" id="email" name="email" class="form-entry" placeholder="Enter your email" required><br>
+                </div>
+                <div>
+                    <label for="number" id="number-label" class="demographics">Age (optional)</label>
+                    <input type="number" id="number" name="age" min="5" max="150" class="form-entry" placeholder="Age"><br>
+                </div>
+                <div>
+                    <p id="position">Which position do you prefer?</p>
+                    <select id="dropdown" name="position" class="form-entry" required>
+                        <option disabled selected value="Select position">Select position</option>
+                        <option value="GK">GK</option>
+                        <option value="CB">CB</option>
+                        <option value="RB">RB</option>
+                        <option value="LB">LB</option>
+                        <option value="CM">CM</option>
+                        <option value="RW">RW</option>
+                        <option value="LW">LW</option>
+                        <option value="ST">ST</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Which is your most dominant foot?</p>
+                    <label for="left" class="radios">
+                        <input type="radio" value="Left" id="left" name="foot" >
+                        Left                    
+                    </label>
+                    
+                    <label for="right" class="radios">
+                        <input type="radio" value="Right" id="right" name="foot" checked>
+                        Right
+                    </label><br>                    
+                </div>
+                <div>
+                    <p>Which three skills would you like to improve over the next 3 months?</p>
+                    <ul class="checkboxes">
+                        <li><label for="passing"><input type="checkbox" value="passing" class="skills">passing</label></li>
+                        <li><label for="finishing"><input type="checkbox" value="finishing" class="skills">finishing</label></li>
+                        <li><label for="penalties"><input type="checkbox" value="penalties" class="skills">penalties</label></li>
+                        <li><label for="headers"><input type="checkbox" value="headers" class="skills">headers</label></li>
+                        <li><label for="free-kicks"><input type="checkbox" value="free-kicks" class="skills">free-kicks</label></li>
+                        <li><label for="tackling"><input type="checkbox" value="tackling" class="skills">tackling</label></li>
+                        <li><label for="positioning"><input type="checkbox" value="positioning" class="skills">positioning</label></li>
+                        <li><label for="first-touch"><input type="checkbox" value="first-touch" class="skills">first-touch</label></li>
+                        <li><label for="dribbling"><input type="checkbox" value="dribbling" class="skills">dribbling</label></li>
+                        <li><label for="shielding"><input type="checkbox" value="shielding" class="skills">shielding</label></li>
+                    </ul>                    
+                </div>
+                <div>
+                    <p>Any comments or concerns?</p>
+                    <textarea
+                        id="comments" name="comments" 
+                        placeholder="Enter your comments here"                        
+                    ></textarea><br>
+                </div>
+
+                <div>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Documentation: C++</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="main-doc">
+            <section class="main-section" id="Structure_of_a_Program">
+                <header>Structure of a Program</header>
+                <p>Let's start by creating a program that prints "Hello World!"</p>
+                <code>
+                    // my first program in C++<br>
+                    #include iostream<br>
+                    int main()<br>
+                    {<br>
+                        &emsp;&emsp;std::cout << "Hello World!";<br>
+                    }<br>
+                </code>
+                <p>
+                    Line 1: // my first program in C++ <br><br>
+                    Two slash signs indicate that the rest of the line is a comment inserted by the programmer but which has no effect on the behavior of the program. Programmers use them to include short explanations or observations concerning the code or program. In this case, it is a brief introductory description of the program. <br><br>
+    
+                    Line 2: #include iostream <br><br>
+                    Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive #include iostream, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen.<br><br>
+    
+                    Line 3: A blank line. <br><br>
+                    Blank lines have no effect on a program. They simply improve readability of the code.<br><br>
+    
+                    Line 4: int main ()<br><br>
+                    This line initiates the declaration of a function. Essentially, a function is a group of code statements which are given a name: in this case, this gives the name "main" to the group of code statements that follow. Functions will be discussed in detail in a later chapter, but essentially, their definition is introduced with a succession of a type (int), a name (main) and a pair of parentheses (()), optionally including parameters.<br><br>
+    
+                    The function named main is a special function in all C++ programs; it is the function called when the program is run. The execution of all C++ programs begins with the main function, regardless of where the function is actually located within the code.<br><br>
+    
+                    Lines 5 and 7: { and }<br><br>
+    
+                    The open brace ({) at line 5 indicates the beginning of main's function definition, and the closing brace (}) at line 7, indicates its end. Everything between these braces is the function's body that defines what happens when main is called. All functions use braces to indicate the beginning and end of their definitions.<br><br>
+    
+                    Line 6: std::cout << "Hello World!";<br><br>
+                    This line is a C++ statement. A statement is an expression that can actually produce some effect. It is the meat of a program, specifying its actual behavior. Statements are executed in the same order that they appear within a function's body.<br><br>
+    
+                    This statement has three parts: First, std::cout, which identifies the standard character output device (usually, this is the computer screen). Second, the insertion operator (<<), which indicates that what follows is inserted into std::cout. Finally, a sentence within quotes ("Hello world!"), is the content inserted into the standard output.<br><br>
+    
+                    Notice that the statement ends with a semicolon (;). This character marks the end of the statement, just as the period ends a sentence in English. All C++ statements must end with a semicolon character. One of the most common syntax errors in C++ is forgetting to end a statement with a semicolon.<br><br>
+                </p>
+                <ul>
+                    <li>header files</li>
+                    <li>function declaration</li>
+                    <li>braces</li>
+                    <li>data stream</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Variables_and_Types">
+                <header >Variables and Types</header>
+                <p>Let's imagine that I ask you to remember the number 5, and then I ask you to also memorize the number 2 at the same time. You have just stored two different values in your memory (5 and 2). Now, if I ask you to add 1 to the first number I said, you should be retaining the numbers 6 (that is 5+1) and 2 in your memory. Then we could, for example, subtract these values and obtain 4 as result.<br></p>
+                <p>The whole process described above is a simile of what a computer can do with two variables. The same process can be expressed in C++ with the following set of statements:<br></p>
+                <code>
+                    a = 5;<br>
+                    b = 2;<br>
+                    a = a + 1;<br>
+                    result = a - b;<br>
+                </code>
+                <ul>
+                    <li>We can now define variable as a portion of memory to store a value.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Constants">
+                <header >Constants</header>
+                <p>Constants are expressions with a fixed value.</p>
+                <p>Literals are the most obvious kind of constants. They are used to express particular values within the source code of a program.</p>
+                <p>Literal constants can be classified into: integer, floating-point, characters, strings, Boolean, pointers, and user-defined literals.</p>
+                <code>
+                    //integer numerals<br>
+                    1776<br>
+                    707<br>
+                    -273<br><br>
+                    
+                    //floating-point numerals<br>
+                    3.14159    // 3.14159<br>
+                    6.02e23    // 6.02 x 10^23<br>
+                    1.6e-19    // 1.6 x 10^-19<br>
+                    3.0        // 3.0  <br><br>
+                    
+                    //character and string Literals<br>
+                    'z'<br>
+                    'p'<br>
+                    "Hello world"<br>
+                    "How do you do?"<br><br>
+                    
+                    //typed constant expressions<br>
+                    const double pi = 3.1415926;<br>
+                    const char tab = '\t';<br><br>
+                    
+                    //preprocessor definitions<br>
+                    #define PI 3.14159<br>
+                    #define NEWLINE '\n'<br><br>
+                </code>
+            </section>
+            <section class="main-section" id="Operators">
+                <header >Operators</header>
+                <p>Here are the types of operators: assignment, arithmetic, compound assignment, increment and decrement, relational and comparison operators, logical operators, conditional ternary, comma, bitwise, explicit type casting, sizeof.</p>
+                <p>
+                    This is an example of conditional ternary operators
+                    
+                    condition ? result1 : result2
+                    If condition is true, the entire expression evaluates to result1, and otherwise to result2.
+                </p>
+                <code>
+                    7==5 ? 4 : 3     // evaluates to 3, since 7 is not equal to 5.<br>
+                    7==5+2 ? 4 : 3   // evaluates to 4, since 7 is equal to 5+2.<br>
+                    5>3 ? a : b      // evaluates to the value of a, since 5 is greater than 3.<br>
+                    a>b ? a : b      // evaluates to whichever is greater, a or b. <br>
+                </code>            
+            </section>
+            <section class="main-section" id="Basic_Input_and_Output">
+                <header >Basic Input and Output</header>
+                <p>These are the basic input and output commands</p>
+                <p>
+                    cin = standard input stream<br>
+                    cout = standard output stream<br>
+                    cerr = standard error (output) stream<br>
+                    clog = standard logging (output) stream<br>
+                </p>
+                <code>
+                    //cin<br>
+                    int age;<br>
+                    cin >> age;<br>
+                    //cout<br>
+                    cout << age; //prints out value of age on screen<br><br>
+                </code>
+            </section>
+            <section>
+                <header>Reference</header> 
+                <p>All the documentation on this page is taken from <a href="https://www.cplusplus.com/doc/tutorial/basic_io/">CPlusPlus</a></p>
+            </section>
+            <nav id="navbar">
+                <header>C++ Documentation</header>
+                <ul>
+                    <li><a class="nav-link" href="#Structure_of_a_Program">Structure of a Program</a></li>
+                    <li><a class="nav-link" href="#Variables_and_Types">Variables and Types</a></li>
+                    <li><a class="nav-link" href="#Constants">Constants</a></li>
+                    <li><a class="nav-link" href="#Operators">Operators</a></li>
+                    <li><a class="nav-link" href="#Basic_Input_and_Output">Basic Input and Output</a></li>
+                </ul>
+            </nav>       
+        </main>
+    </body>    
+</html>

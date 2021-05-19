@@ -1,0 +1,112 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(46, 46, 46);
+    margin: 0;
+  }
+
+  body::before{
+    content: "";
+    background-image: url('https://media.afrocharts.com/file/afrocharts-media/uploads/2020/10/Tanzania-Flag-afrocharts-5f8d178a0ca43397c93b36a.png');
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.05;
+  }
+
+  h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    padding-top: 25px;
+  }
+
+  h3{
+    font-size: 3rem;
+    position: relative;
+  }
+
+  #bottom_header{
+    padding-bottom: 25px;
+  }
+
+  a{
+    color:#06adb9;
+  }
+
+  a:visited{
+     color:#fa06a9;
+  } 
+
+  #main{
+    margin: 25px 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+  }
+
+  img{
+    max-width: 75%;
+    display: block;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  #img-div{
+    padding: 10px;
+    margin: 0;
+  }
+
+  #img-caption{
+    margin: 25px 0 0 0;
+  }
+
+  @media(max-width:460px){
+    #main{
+      margin:0;
+    }
+    #img-caption{
+      font-size: 2rem;
+    }
+  }
+
+  #headline{
+    margin: 25px 0;
+    text-align: center;
+  } 
+
+  ul{
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+  }
+
+  li{
+    margin: 15px 0;
+  }
+
+  #last_list_item{
+    margin-bottom: 50px;
+  }
+
+  blockquote{
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+
+  

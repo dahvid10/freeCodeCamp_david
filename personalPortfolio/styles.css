@@ -1,0 +1,159 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+a:hover .pound{
+    opacity: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width:1280px) {
+
+}
+
+#welcome-section {
+    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-image: linear-gradient(40deg, rgb(58, 54, 54), rgb(0, 0, 0), rgb(58, 54, 54));
+    color:azure;
+    margin: 0;
+}
+
+#welcome-section p{
+    color: rgb(6, 219, 219);
+    font-style: italic;
+    margin-top: 0;
+}
+
+#projects {
+    background-image: linear-gradient(40deg, teal, rgb(46, 30, 116));
+    color: azure;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#projects-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 2em;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-row: auto;
+    grid-gap: 5em;
+    width: 100vw;
+    margin: 5% auto;
+    max-width: 50vw;
+    justify-content: center;
+}
+
+.project-tile {
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.pound {
+    opacity: 0%;
+}
+
+#connect {
+    background-image: linear-gradient(40deg, rgb(58, 54, 54), rgb(0, 0, 0), rgb(58, 54, 54));
+    font-size: 2em;
+    color: azure;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 4;
+    box-shadow: 0 2px 5px;
+    background: teal;
+    font-size: 1.2em;
+}
+
+#connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 5%;
+}
+
+#connect a:hover {
+    transform: scale(2);
+}
+
+#connect h1 {
+    font-size: 2em;
+}
+
+@media (max-width: 1280px) {
+    .project-grid {
+        transform: scale(0.7);
+        grid-template-columns: repeat(2, minmax(400px, 1fr));
+        margin: 0;
+    }
+    
+}

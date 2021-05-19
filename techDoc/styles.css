@@ -1,0 +1,76 @@
+body {
+    background-color: azure;
+    background-color: black;
+    color: ivory;
+}
+
+main {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    background-color: black;
+    border-style: none;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+section {
+    margin: 2%;
+    font-size: 0.9rem;
+}
+
+code {
+    text-align: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 90%;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 2%;
+}
+
+#navbar ul {
+    height: 80%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: ivory;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 250px;
+    padding: 10px;
+    margin-bottom: 100px;
+    color: ivory;
+}
+
+a {
+    color: ivory;
+}
+
+@media (max-width: 600px) {
+    main {
+        font-size: 8px;
+    }
+}

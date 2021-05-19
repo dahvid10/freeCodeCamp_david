@@ -1,0 +1,289 @@
+body {
+    background-color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#product {
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 4px black;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #f1c40f;
+}
+
+.grid {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5dd4ba;
+    width: 100%; 
+    box-shadow: 0 2px 5px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+    .logo > img {
+        margin: 0 auto;
+    }
+}
+
+nav {
+    font-weight: 400;
+  
+}
+
+@media (max-width: 650px) { 
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav li {
+        padding-bottom: 5px;
+    }
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+}
+
+nav > ul > li {
+    padding: 0 40px;
+}
+
+@media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  info > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  #header-img {
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  #info input[type='email'] {
+    max-width: 300px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  #info input[type='submit'] {
+      max-width: 200px;
+      width: 100%;
+      height: 30px;
+      margin: 15px 0;
+      border: 0;
+      background-color: #f1c40f;
+  }
+
+  #info input[type='submit']:hover {
+      background: orange;
+      transition: background-color 0.5s;;
+  }
+
+  @media (max-width:650px){
+    #info {
+    margin-top: 120px;
+    }
+  }
+
+  #features {
+    justify-content: center;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  #features .desc {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (max-width: 550px) {
+    #features .desc {
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 650px) {
+    #features {
+        margin-top: 0; 
+    }
+  }
+
+  #services {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #services > iframe {
+    max-width: 560px;
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 2%;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 4%;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+}
+
+.product > button {
+    border: 0;
+    margin: 10px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.product > button:hover {
+    background-color: orange;
+    transition: background-color .5s;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+      }
+}
+
+footer {
+    background-color: #e9ffff;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+}
+
+footer > span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    color: #444;
+    padding-right: 5px;
+}
+
